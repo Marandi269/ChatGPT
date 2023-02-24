@@ -125,6 +125,7 @@ class Chatbot:
         self.session.headers.clear()
         self.session.headers.update(
             {
+                "User-Agent": "",
                 "Accept": "text/event-stream",
                 "Authorization": f"Bearer {access_token}",
                 "Content-Type": "application/json",
